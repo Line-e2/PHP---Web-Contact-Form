@@ -7,10 +7,13 @@
 </head>
 <body>
 <div>
-	<input type="text" name="username" class="textline" id="username">
-	<br>
-	<input type="text" name="password"class="textline" id="password">
-	<button class="btn" ><a href="/page2.html">Submit</a></button>
+	<form method="get" action="/page2.html">
+		<input type="text" name="username" class="textline" id="username" value="<?php echo $username ;?>">
+		<br>
+		<input type="text" name="password"class="textline" id="password">
+		<input type="submit" name="submit" value="Log In">
+	</form>
+	
 </div>
 </body>
 </html>
