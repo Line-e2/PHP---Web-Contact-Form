@@ -1,14 +1,15 @@
 
 <?php
 
-if($_SERVER["REQUEST_METHOD"] === "post"){
+if($_SERVER["REQUEST_METHOD"] === "POST"){
 	header("Location: page2.html");
+	exit;
 }
 
 ;?>
 
 
-
+<link rel="stylesheet" type="text/css" href="style.css">
 <div class="container">
 	<form method="post" action="">
 		<span>Name:</span><input type="text" name="username" class="textline" id="username" >
