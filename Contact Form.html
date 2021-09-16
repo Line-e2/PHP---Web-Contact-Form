@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div>
+<div class="container">
 	<form method="get" action="/page2.html">
 		<span>Name:</span><input type="text" name="username" class="textline" id="username" value="<?php echo $username ;?>">
 		<br>
@@ -19,7 +19,7 @@
 			<option value="other">Other</option>
 		</select>
 		<br>
-		<span>Comment:</span><input type="textarea" name="comment" class="textline" id="comment">
+		<span>Comment:</span> <textarea class="textline" id="comment"></textarea>
 		<input type="submit" name="submit" value="Send">
 	</form>
 	
