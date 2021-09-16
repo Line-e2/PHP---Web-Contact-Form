@@ -1,6 +1,10 @@
 
 <?php
 
+$username = "";
+$error = "hallo";
+
+
 if($_SERVER["REQUEST_METHOD"] === "POST"){
 	header("Location: page2.html");
 	exit;
@@ -26,5 +30,6 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 		<span>Comment:</span> <textarea class="textline" id="comment"></textarea>
 		<input type="submit" name="submit" value="Send">
 	</form>
+	<p><?= $error;?></p>
 	
 </div>
