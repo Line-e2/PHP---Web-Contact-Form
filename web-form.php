@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Web Contact Form</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+
+<?php
+
+if($_SERVER["REQUEST_METHOD"] === "post"){
+	header("Location: page2.html");
+}
+
+;?>
+
+
+
 <div class="container">
 	<form method="post" action="">
 		<span>Name:</span><input type="text" name="username" class="textline" id="username" >
@@ -24,13 +27,3 @@
 	</form>
 	
 </div>
-</body>
-</html>
-
-<?php
-
-if($_SERVER["REQUEST_METHOD"] === "post"){
-	header("Location: page2.html");
-}
-
-;?>
