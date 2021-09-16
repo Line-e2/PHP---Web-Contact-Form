@@ -8,10 +8,19 @@
 <body>
 <div>
 	<form method="get" action="/page2.html">
-		<input type="text" name="username" class="textline" id="username" value="<?php echo $username ;?>">
+		<span>Name:</span><input type="text" name="username" class="textline" id="username" value="<?php echo $username ;?>">
 		<br>
-		<input type="text" name="password"class="textline" id="password">
-		<input type="submit" name="submit" value="Log In">
+		<span>E-Mail:</span><input type="text" name="email" class="textline" id="email">
+		<br>
+		<span>Reason for Contact:</span><select name="dropdown" id="dropdown">
+			<option value="query">Query</option>
+			<option value="complaint">Complaint</option>
+			<option value="feedback">Feedback</option>
+			<option value="other">Other</option>
+		</select>
+		<br>
+		<span>Comment:</span><input type="textarea" name="comment" class="textline" id="comment">
+		<input type="submit" name="submit" value="Send">
 	</form>
 	
 </div>
